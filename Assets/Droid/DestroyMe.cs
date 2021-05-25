@@ -10,7 +10,7 @@ public class DestroyMe : MonoBehaviour {
 		//encontra colizão com inimigo para dar-lhe dano
 		if (col.collider.CompareTag("Enemy"))
 		{
-			col.collider.GetComponent<AI>().HitEnemy();
+			col.collider.GetComponent<AI>().Damege();
 			
 		}
 		Destroy(this.gameObject);
